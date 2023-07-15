@@ -26,7 +26,7 @@ const create = catchError(async(req, res) => {
     );
 
     const code = require('crypto').randomBytes(32).toString('hex');
-    const link = `${frontBaseUrl}/auth/verify/${code}`
+    const link = `${frontBaseUrl}/auth/verify_email/${code}`
 	//mire profe, si en vez del link de arriba, envio el de abajo, funciona, 
 	//pero lo deje como usted lo hizo para saber que pasa con el de arriba que no me funciona
    //const link = `https://user-auth-crud.onrender.com/users/verify/${code}`
