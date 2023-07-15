@@ -26,8 +26,8 @@ const create = catchError(async(req, res) => {
     );
 
     const code = require('crypto').randomBytes(32).toString('hex');
-   // const link = `${frontBaseUrl}/auth/verify/${code}`
-	const link = `${frontBaseUrl}/users/verify/${code}`
+    const link = `${frontBaseUrl}/auth/verify/${code}`
+	//const link = `${frontBaseUrl}/users/verify/${code}`
 
     await sendEmail({
 		to: email, // Email del receptor
