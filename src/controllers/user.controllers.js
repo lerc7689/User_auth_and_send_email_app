@@ -118,7 +118,7 @@ const resetPassword = catchError(async(req, res) => {
 				<div>
 						<h1>Reset your password</h1>
                         <p>click on the link bellow to reset your account password</p>
-                        <a href=${link}>Verify account link</a>
+                        <a href=${link}>Reset account link</a>
 				</div>
 		` // con backtics ``
     })
